@@ -1,0 +1,17 @@
+.div {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 30px;
+   background-color: #232123;
+}
+
+.text {
+   margin: 0 60px;
+   flex: 1 1 auto;
+   display: inline-block;
+   font-weight: bold;
+   font-size: 24px;
+   line-height: 32px;
+   color: #fff;
+}
