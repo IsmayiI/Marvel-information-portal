@@ -67,7 +67,7 @@ const View = ({ data }) => {
          <div className="char__comics">Comics:</div>
          <ul className="char__comics-list">
             {comics.length === 0
-               ? <li style={{ textAlign: 'center' }}>Нет Данных</li>
+               ? <li style={{ textAlign: 'center' }}>This character's data is missing</li>
                : comics.map(({ name }, i) => {
                   if ((i + 1) <= 10) {
                      return (

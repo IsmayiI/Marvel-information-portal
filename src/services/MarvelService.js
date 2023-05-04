@@ -40,7 +40,7 @@ const useMarvelService = () => {
       return {
          id: char.id,
          pages: char.pageCount,
-         text: char.textObjects.length ? char.textObjects[0].text : 'описание к сожалению отсутсвует :(',
+         text: char.textObjects.length ? char.textObjects[0].text : 'There is no description for this character',
          language: char.textObjects.length ? char.textObjects[0].language : null,
          name: char.title,
          price: char.prices[0].price,
@@ -53,7 +53,7 @@ const useMarvelService = () => {
       return {
          id: char.id,
          name: char.name,
-         description: char.description.length ? `${char.description.slice(0, 154)}...` : 'Данных нэма',
+         description: char.description.length ? `${char.description.slice(0, 154)}...` : "This character's data is missing",
          thumbnail: `${char.thumbnail.path}.${char.thumbnail.extension}`,
          homepage: char.urls[0].url,
          wiki: char.urls[1].url,
