@@ -37,8 +37,8 @@
 
 .char__name {
    font-weight: bold;
-   font-size: 22px;
-   line-height: 29px;
+   font-size: 18px;
+   line-height: 1.2;
    text-transform: uppercase;
    color: #fff;
 }
