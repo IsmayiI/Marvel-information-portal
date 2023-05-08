@@ -53,7 +53,7 @@ const useMarvelService = () => {
       return {
          id: char.id,
          name: char.name,
-         description: char.description.length ? `${char.description.slice(0, 154)}...` : "This character's data is missing",
+         description: char.description.length ? `${char.description.slice(0, 154)}...` : "Description not available at the moment. We apologize to you. Go to Wiki.",
          thumbnail: `${char.thumbnail.path}.${char.thumbnail.extension}`,
          homepage: char.urls[0].url,
          wiki: char.urls[1].url,

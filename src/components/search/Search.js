@@ -24,9 +24,9 @@ const Search = ({ onSearchPage }) => {
    }
 
    const messageNewPage = !char ? null : char.length > 0 ? <div className={pageSearching}>
-      <p className={text} >Character Page</p>
-      <Link className='button button__main' to={`/character/${char[0].name}`}> <div className='inner'>Page</div></Link>
-   </div> : <p className={textTop} >Page not found try again</p>
+      <p className={text} >There is! Visit Thor page?</p>
+      <Link className='button button__main' to={`/character/${char[0].name}`}> <div className='inner'>To page</div></Link>
+   </div> : <p className={textTop} >The character was not found. Check the name and try again</p>
 
 
    return (
